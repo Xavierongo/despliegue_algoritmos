@@ -18,3 +18,6 @@ mlflow ui --port 5000
 
 ### Despliegue de la API
 uvicorn src.api:app --reload  
+
+### ejecutar SVM
+python src/main.py --model svm --C 0.8 --kernel linear
