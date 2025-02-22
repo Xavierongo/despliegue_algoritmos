@@ -11,7 +11,11 @@ pip install -r requirements.txt
 
 ## Ejecución del Proyecto
 ### Entrenamiento del Modelo
-python src/main.py --n_estimators 150 --max_depth 5  
+# Entrenar Random Forest
+python main.py --model rf --n_estimators 150
+
+# Entrenar SVM
+python main.py --model svm --kernel poly
 
 ### Visualización de Resultados
 mlflow ui --port 5000  
